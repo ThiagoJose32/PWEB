@@ -1,0 +1,66 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+.menu{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
+
+.menu table{                    /*todos as tables dentro da classe menu serão dessa forma*/
+    width: 100%;
+    background-color: #9d9d9d;
+}
+
+.menu table td:last-child{
+    float:right;
+    justify-content: center;
+}
+
+
+#menu-header{
+    background-color: rgb(41, 41, 41);
+    margin: 30px;
+}
+
+#menu-header li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#menu-header li img{
+    border-radius: 100%;
+}
+
+#menu-header li a{
+    color: rgba(255, 255, 255, 0.884);
+    float:;
+}
+
+#menu-header li a:hover{
+    background-color: rgb(96, 96, 255);
+    transition: background .4s;
+}
+
+#menu-header li:last-child a{
+    float: right;
+    background-color: brown;
+}
+
+.sec1_body{
+    display: flex;
+}
+
+.rodape{
+    color: blue;
+    text-align: center;
+    background-color: black;
+}

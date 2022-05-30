@@ -1,0 +1,136 @@
+/* RESET */
+*{
+     margin: 0;
+     padding: 0;
+     font-size: 100%;
+     box-sizing: border-box;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ nav, ul{
+     list-style: none;
+ }
+ a{
+     text-decoration: none;
+     cursor: pointer;
+     opacity: 0.9;
+ }
+
+ /* HEADER */
+ header{
+     background-color: rgb(204, 200, 255);
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin: 30px;
+     padding: 10px;
+ }
+ header img{
+     border-radius: 40%;
+     object-fit: contain;
+     max-width: 100px;
+     max-height: 100px;
+ }
+ header nav{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+ }
+ header nav a{
+    padding: 1vw;
+    border: 5px solid rgb(211, 222, 255);
+ }
+ header nav a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+ }
+
+ #login a{
+     padding: 1vw;
+     background-color: rgb(149, 156, 255);
+     object-fit: contain;
+ }
+ #login a:hover{
+     background-color: black;
+     color: white;
+     transition: 0.6s;
+ }
+
+
+/* BODY */
+
+body h2{
+    text-align: center;
+}
+
+main{
+    margin: 30px;
+    font-size: large;
+}
+main #topico-1{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+main #topico-2{
+    margin-top: 8vw;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+main img{
+    max-width: 50%;
+}
+main p{
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer{
+    margin: 0 30px 0 30px;
+    border-top: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 4vw;
+    background-color: rgb(170, 137, 201);
+} 
+
+footer img{
+    max-width: 10vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+     header{
+         flex-direction: column;
+         height: 35vw;
+     }
+     main #topico-1{
+        flex-direction: column;
+     }
+     main #topico-2{
+        border-top: 40vw;
+        border-top: 3px solid rgb(83, 0, 0);
+        flex-direction: column-reverse; 
+     }
+     main img{
+         max-width: 100%;
+     }
+ }
+
