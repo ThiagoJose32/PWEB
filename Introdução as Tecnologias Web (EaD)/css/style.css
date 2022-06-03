@@ -1,0 +1,239 @@
+/* RESET */
+*{
+     margin: 0;
+     padding: 0;
+     font-size: 100%;
+     box-sizing: border-box;
+     font-family:'Playfair Display', serif;;
+ }
+ nav, ul{
+     list-style: none;
+ }
+ a{
+     text-decoration: none;
+     cursor: pointer;
+     opacity: 0.9;
+ }
+
+
+ /* HEADER */
+ header{
+     background-color: rgb(204, 200, 255);
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding: 0 16px 0 16px;
+ }
+ header img{
+     border-radius: 0%;
+     object-fit: contain;
+     max-width: 65px;
+     max-height: 65px;
+ }
+ header nav{
+    display: flex;
+    justify-content: center;
+ }
+ header nav a{
+    /*padding: 1.3vw 3vw 1.3vw 3vw;*/
+    padding: 25px 3vw 25px 3vw;
+    border: 1px solid rgb(211, 222, 255);
+    font-size: large;
+    font-weight: bold;
+ }
+ header nav a:hover{
+    /*background-color: rgb(149, 156, 255);*/
+    background-color: rgba(0,0,32);
+    color: white;
+    transition: 0.4s;
+ }
+ header form .search{
+    width: 15vw;
+    height: 6vh;
+    border-radius: 20px;
+    background-color: rgb(204, 200, 255, 0.329);
+ }
+ header form .lupa{
+    width: 20px;
+    height: 20px;
+    margin-left: .5vw;
+ }
+ #login button{
+     border-radius: 25px;
+     border-style: none;
+     /*padding: 10px 30px 10px 30px;               /*cima, direita, baixo, esquerda*/
+     padding: .5vw 1vw .5vw 1vw;
+     background-color: rgba(0,0,32);
+     color: white;
+ }
+ #login button:hover{
+     background-color: rgb(102, 0, 161);
+     color: white;
+     transition: 0.4s;
+ }
+
+
+ /*-------------------------------------*/
+
+
+ /* BODY */
+body{
+    background: rgb(0,0,32);
+background: linear-gradient(360deg, rgba(0,0,32,0.9948354341736695) 15%, rgba(203,168,255,1) 100%);
+}
+
+body h1{
+    font-size:x-large;
+    text-align: center;
+    padding: 8vh 0 8vh 0;
+}
+
+main{
+    margin: 0 15vw 0 15vw;
+    font-size: large;
+}
+main .topico-1{
+    display: flex;
+    align-items: center;
+    gap: 8vw;
+    color: antiquewhite;
+}
+main .topico-1 img{
+    max-width: 50%;
+    border-radius: 12px;
+}
+
+.linha{
+    display: flex;
+    height: 0.4vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.29);
+    margin: 12vh 10vw 10vh 10vw;
+}
+
+main .topico-2{
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    color: antiquewhite;
+}
+main .topico-2 img{
+    width: 50%;
+    border-radius: 12px;
+}
+
+main p{
+    text-align: center;
+}
+
+main img{
+    display: block;
+    margin: 10vh auto 5vh auto;
+}
+
+main table{
+    margin: auto;
+    border: 1px solid white;
+}
+
+main table tr th, td{
+    color: white;
+    text-align: center;
+    width: 3vw;
+    height: 5vh;
+    padding: 3px 5px 3px 5px;
+}
+main table tr td button{
+    color: aqua;
+    background-color: transparent;
+    border-style: none;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: .1vh solid antiquewhite;
+    color: antiquewhite;
+    margin-top: 10vh;
+} 
+
+footer img{
+    max-width: 8vw;
+    padding: 2vh;
+}
+
+footer .links{
+    display: flex;
+    gap: 2vw;
+    text-align: center;
+    padding: 5vh 0 5vh 0;
+}
+
+footer ul li a{
+    font-size: small;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+     header{
+         flex-direction: column;
+         height: 25vw;
+     }
+     header nav a{
+        padding: 3vw 25% 3vw 25%;
+        border: 1px solid rgb(211, 222, 255);
+     }
+     #login a{
+        /*padding: 10px 30px 10px 30px;               /*cima, direita, baixo, esquerda*/
+        padding: .5vw 1vw .5vw 1vw;
+     }
+
+     main #topico-1{
+        flex-direction: column;
+     }
+     main #topico-2{
+        border-top: 40vw;
+        border-top: 3px solid rgb(83, 0, 0);
+        flex-direction: column-reverse; 
+     }
+     main img{
+         max-width: 100%;
+     }
+ }
+
+@media (max-width: 600px) {
+    header{
+        flex-direction: column;
+        height: 30vw;
+    }
+    header nav a{
+        padding: 3vw 14.4% 3vw 14.4%;
+        border: 1px solid rgb(211, 222, 255);
+     }
+}
+
+@media (max-width: 375px) {
+    header{
+        flex-direction: column;
+        height: 45vw;
+    }
+    header nav a{
+        padding: 3vw 4% 3vw 4%;
+        border: 1px solid rgb(211, 222, 255);
+     }
+}
